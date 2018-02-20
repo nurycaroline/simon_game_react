@@ -1,0 +1,91 @@
+body {
+  font-family: 'Righteous', cursive; }
+
+.board {
+  width: 430px;
+  height: 430px;
+  margin: 25px auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .board.off .btn-start, .board.off .btn-strict, .board.off .strict, .board.off .simon {
+    filter: grayscale(100%); }
+
+.simon div {
+  width: 200px;
+  height: 200px;
+  float: left;
+  border: 10px solid black; }
+
+.simon .green {
+  background-color: #219653;
+  border-top-left-radius: 100%;
+  margin-right: -10px; }
+
+.simon .red {
+  background-color: #EB5757;
+  border-top-right-radius: 100%; }
+
+.simon .yellow {
+  background-color: #F2C94C;
+  border-bottom-left-radius: 100%;
+  margin-right: -10px;
+  margin-top: -10px; }
+
+.simon .blue {
+  background-color: #2D9CDB;
+  border-bottom-right-radius: 100%;
+  margin-top: -10px; }
+
+.menu {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 10px solid black;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  background-color: #fff; }
+  .menu .point {
+    width: 75px;
+    margin: 10px auto auto;
+    text-align: center;
+    line-height: 25px; }
+    .menu .point input {
+      text-align: center;
+      width: 70px;
+      height: 40px;
+      font-size: 30px;
+      border: 3px solid black; }
+  .menu .on-off {
+    display: block;
+    margin: 15px auto auto;
+    cursor: pointer; }
+    .menu .on-off.on {
+      width: 50px;
+      height: 50px;
+      background-image: url("./img/on.svg"); }
+    .menu .on-off.off {
+      width: 50px;
+      height: 50px;
+      background-image: url("./img/off.svg"); }
+
+.buttons {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around; }
+  .buttons div {
+    width: 50px;
+    height: 50px; }
+  .buttons .btn-strict, .buttons .btn-start {
+    cursor: pointer; }
+  .buttons .btn-strict {
+    margin-right: -40px; }
+  .buttons .strict {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #219653; }
+    .buttons .strict.off {
+      filter: grayscale(100%); }
