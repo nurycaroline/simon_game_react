@@ -3,6 +3,11 @@ $red: #EB5757;
 $yellow: #F2C94C;
 $blue: #2D9CDB;
 
+$onGreen: #1d5636;
+$onRed: #4f1a1a;
+$onYellow: #493d17;
+$onBlue: #163547;
+
 $onImg: url('./img/on.svg');
 $offImg: url('./img/off.svg');
 
@@ -36,21 +41,37 @@ body {
 		background-color: $green;
 		border-top-left-radius: 100%;
 		margin-right: -10px;
+
+		&.on {
+			background-color: $onGreen;
+		}
 	}
 	.red {
 		background-color: $red;
 		border-top-right-radius: 100%;
+
+		&.on {
+			background-color: $onRed;
+		}
 	}
 	.yellow {
 		background-color: $yellow;
 		border-bottom-left-radius: 100%;
 		margin-right: -10px;
 		margin-top: -10px;
+
+		&.on {
+			background-color: $onYellow;
+		}
 	}
 	.blue {
 		background-color: $blue;
 		border-bottom-right-radius: 100%;
 		margin-top: -10px;
+
+		&.on {
+			background-color: $onBlue;
+		}
 	}
 }
 

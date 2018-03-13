@@ -1,8 +1,8 @@
 import React from "react";
 
-export const Point = () => (
+export const Point = ({value}) => (
   <div className="point">
-    <input disabled value="25" type="text" />
+    <input disabled value={value} type="text" />
     POINT
   </div>
 );

@@ -21,21 +21,29 @@ body {
   background-color: #219653;
   border-top-left-radius: 100%;
   margin-right: -10px; }
+  .simon .green.on {
+    background-color: #1d5636; }
 
 .simon .red {
   background-color: #EB5757;
   border-top-right-radius: 100%; }
+  .simon .red.on {
+    background-color: #4f1a1a; }
 
 .simon .yellow {
   background-color: #F2C94C;
   border-bottom-left-radius: 100%;
   margin-right: -10px;
   margin-top: -10px; }
+  .simon .yellow.on {
+    background-color: #493d17; }
 
 .simon .blue {
   background-color: #2D9CDB;
   border-bottom-right-radius: 100%;
   margin-top: -10px; }
+  .simon .blue.on {
+    background-color: #163547; }
 
 .menu {
   width: 200px;
