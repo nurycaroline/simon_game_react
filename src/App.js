@@ -33,9 +33,18 @@ class App extends Component {
         point: 0,
         positionColor: 0
       },
-      () => this.turnOn()
+      () => this.turnOnSequence()
     );
   };
+
+  turnOnSequence = () => {
+    let { listColors , positionColor } = this.state;
+    console.log('sequence')
+    for(var i = 0; i <= 5; i++ ){
+      console.log(listColors[i])
+      setTime(() => this.turnOn(listColors[i]));
+    }
+  }
 
   turnOn = numColor => {
     let { positionColor, listColors } = this.state;
@@ -68,7 +77,7 @@ class App extends Component {
           point: point + 1,
           positionColor: positionColor + 1
         },
-        this.turnOn(listColors[positionColor + 1])
+        () => this.turnOn()
       );
     } else {
       alert("It's wrong!!");
